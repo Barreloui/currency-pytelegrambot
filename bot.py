@@ -14,7 +14,7 @@ def send_welcome(message):
     itembtn1 = types.KeyboardButton('USD')
     itembtn2 = types.KeyboardButton('EUR')
     itembtn3 = types.KeyboardButton('RUR')
-    itembtn4 = types.KeyboardButton('BTC')
+  
     markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
     msg = bot.send_message(message.chat.id, 
                     "Узнать наличный курс ПриватБанка (в отделениях)", reply_markup=markup)
